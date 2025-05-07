@@ -1,0 +1,1 @@
+rootProject.name = "Sprint_3_2_Patterns_2"
