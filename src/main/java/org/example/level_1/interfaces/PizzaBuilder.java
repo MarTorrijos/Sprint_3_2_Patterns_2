@@ -1,8 +1,10 @@
 package org.example.level_1.interfaces;
 
+import org.example.level_1.model.Pizza;
+
 public interface PizzaBuilder {
-
-    // Crea una interfície PizzaBuilder amb els mètodes necessaris per configurar la mida, la massa
-    // i els ingredients d'una pizza.
-
+    void buildSize();
+    void buildDough();
+    void buildToppings();
+    Pizza getPizza();
 }

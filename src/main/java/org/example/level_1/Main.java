@@ -1,16 +1,31 @@
 package org.example.level_1;
 
-public class Main {
+import org.example.level_1.model.HawaiianPizzaBuilder;
+import org.example.level_1.model.Pizza;
+import org.example.level_1.model.PizzaMaker;
+import org.example.level_1.model.TomatoPizzaBuilder;
 
-    // BUILDER
-    // Desenvolupa un sistema de gestió de comandes de pizzes
-    // El sistema ha de permetre la creació de diferents tipus de pizzes amb configuracions de mida, massa
-    // i ingredients diferents.
+public class Main {
 
     public static void main(String[] args) {
 
-        // En el programa principal (Main), crea instàncies de PizzaBuilder i de MestrePizzer, i utilitza'ls per
-        // construir pizzes amb diferents configuracions.
+        HawaiianPizzaBuilder hawaiianBuilder = new HawaiianPizzaBuilder();
+        PizzaMaker hawaiianMaker = new PizzaMaker(hawaiianBuilder);
+
+        hawaiianMaker.buildPizza();
+        Pizza hawaiianPizza = hawaiianBuilder.getPizza();
+
+        System.out.println("PIZZA HAWAIANA:\n" + hawaiianPizza);
+
+        System.out.println("_____________________________________________");
+
+        TomatoPizzaBuilder tomatoBuilder = new TomatoPizzaBuilder();
+        PizzaMaker tomatoMaker = new PizzaMaker(tomatoBuilder);
+
+        tomatoMaker.buildPizza();
+        Pizza tomatoPizza = tomatoBuilder.getPizza();
+
+        System.out.println("PIZZA DE TOMATE:\n" + tomatoPizza);
 
     }
 
