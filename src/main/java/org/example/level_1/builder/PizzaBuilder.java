@@ -1,6 +1,6 @@
-package org.example.level_1.interfaces;
+package org.example.level_1.builder;
 
-import org.example.level_1.model.Pizza;
+import org.example.level_1.product.Pizza;
 
 public interface PizzaBuilder {
     void buildSize();
