@@ -1,14 +1,26 @@
 package org.example.level_2;
 
-public class Main {
+import org.example.level_2.concreteObserver.NewAgency;
+import org.example.level_2.concreteSubject.NewBroker;
 
-    // Dissenya un sistema en el qual un Agent de Borsa (Observable) notifica a diverses agències de Borsa (Observers)
-    // canvis quan la Borsa puja o baixa
-    // És necessari que l'objecte Observable mantingui referències als Observers
+public class Main {
 
     public static void main(String[] args) {
 
+        NewAgency agency1 = new NewAgency("Tiburaos SA");
+        NewAgency agency2 = new NewAgency("Torres asociados");
+        NewBroker broker = new NewBroker();
 
+        broker.addObserver(agency1);
+        broker.addObserver(agency2);
+
+        broker.notifyObservers("La bolsa baja");
+
+        broker.removeObserver(agency1);
+
+        System.out.println("\n" + agency1.getName() + " se ha borrado como observer\n");
+
+        broker.notifyObservers("La bolsa sube");
 
     }
 
