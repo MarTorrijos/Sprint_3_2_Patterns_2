@@ -1,9 +1,9 @@
 package org.example.level_1;
 
-import org.example.level_1.builder.HawaiianPizzaBuilder;
+import org.example.level_1.concreteBuilder.HawaiianPizzaBuilder;
 import org.example.level_1.product.Pizza;
 import org.example.level_1.director.PizzaMaker;
-import org.example.level_1.builder.TomatoPizzaBuilder;
+import org.example.level_1.concreteBuilder.TomatoPizzaBuilder;
 
 public class Main {
 
