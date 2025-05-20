@@ -1,10 +1,10 @@
-package org.example.level_1.builder;
+package org.example.level_1.interfaces;
 
-import org.example.level_1.product.Pizza;
+import org.example.level_1.model.Pizza;
 
 public interface PizzaBuilder {
     void buildSize();
     void buildDough();
     void buildToppings();
-    Pizza getPizza();
+    Pizza getPIZZA();
 }

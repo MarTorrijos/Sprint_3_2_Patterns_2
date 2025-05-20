@@ -1,6 +1,4 @@
-package org.example.level_2.subject;
-
-import org.example.level_2.observer.Agency;
+package org.example.level_2.interfaces;
 
 public interface Broker {
 

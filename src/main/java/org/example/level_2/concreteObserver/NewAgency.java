@@ -1,6 +1,6 @@
 package org.example.level_2.concreteObserver;
 
-import org.example.level_2.observer.Agency;
+import org.example.level_2.interfaces.Agency;
 
 public class NewAgency implements Agency {
 

@@ -1,7 +1,7 @@
 package org.example.level_1.director;
 
-import org.example.level_1.builder.PizzaBuilder;
-import org.example.level_1.product.Pizza;
+import org.example.level_1.interfaces.PizzaBuilder;
+import org.example.level_1.model.Pizza;
 
 public class PizzaMaker {
 
@@ -15,7 +15,7 @@ public class PizzaMaker {
         builder.buildSize();
         builder.buildDough();
         builder.buildToppings();
-        return builder.getPizza();
+        return builder.getPIZZA();
     }
 
 }

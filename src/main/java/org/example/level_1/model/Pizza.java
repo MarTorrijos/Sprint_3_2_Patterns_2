@@ -1,4 +1,4 @@
-package org.example.level_1.product;
+package org.example.level_1.model;
 
 import org.example.level_1.enums.DoughType;
 import org.example.level_1.enums.PizzaSize;

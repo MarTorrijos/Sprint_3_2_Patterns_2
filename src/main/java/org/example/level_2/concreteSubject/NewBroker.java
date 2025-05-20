@@ -1,7 +1,7 @@
 package org.example.level_2.concreteSubject;
 
-import org.example.level_2.observer.Agency;
-import org.example.level_2.subject.Broker;
+import org.example.level_2.interfaces.Agency;
+import org.example.level_2.interfaces.Broker;
 
 import java.util.ArrayList;
 import java.util.List;

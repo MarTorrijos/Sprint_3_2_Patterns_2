@@ -1,7 +1,7 @@
 package org.example.level_1;
 
 import org.example.level_1.concreteBuilder.HawaiianPizzaBuilder;
-import org.example.level_1.product.Pizza;
+import org.example.level_1.model.Pizza;
 import org.example.level_1.director.PizzaMaker;
 import org.example.level_1.concreteBuilder.TomatoPizzaBuilder;
 
@@ -13,7 +13,7 @@ public class Main {
         PizzaMaker hawaiianMaker = new PizzaMaker(hawaiianBuilder);
 
         hawaiianMaker.buildPizza();
-        Pizza hawaiianPizza = hawaiianBuilder.getPizza();
+        Pizza hawaiianPizza = hawaiianBuilder.getPIZZA();
 
         System.out.println("PIZZA HAWAIANA:\n" + hawaiianPizza);
 
@@ -23,7 +23,7 @@ public class Main {
         PizzaMaker tomatoMaker = new PizzaMaker(tomatoBuilder);
 
         tomatoMaker.buildPizza();
-        Pizza tomatoPizza = tomatoBuilder.getPizza();
+        Pizza tomatoPizza = tomatoBuilder.getPIZZA();
 
         System.out.println("PIZZA DE TOMATE:\n" + tomatoPizza);
 

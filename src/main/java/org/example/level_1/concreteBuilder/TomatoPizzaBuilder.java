@@ -1,38 +1,38 @@
 package org.example.level_1.concreteBuilder;
 
-import org.example.level_1.builder.PizzaBuilder;
+import org.example.level_1.interfaces.PizzaBuilder;
 import org.example.level_1.enums.DoughType;
 import org.example.level_1.enums.PizzaSize;
-import org.example.level_1.product.Pizza;
+import org.example.level_1.model.Pizza;
 
 import java.util.Arrays;
 
 public class TomatoPizzaBuilder implements PizzaBuilder {
 
-    private Pizza pizza;
+    private final Pizza PIZZA;
 
     public TomatoPizzaBuilder() {
-        this.pizza = new Pizza();
+        this.PIZZA = new Pizza();
     }
 
     @Override
     public void buildSize() {
-        pizza.setSize(PizzaSize.MEDIUM);
+        PIZZA.setSize(PizzaSize.MEDIUM);
     }
 
     @Override
     public void buildDough() {
-        pizza.setDough(DoughType.THIN);
+        PIZZA.setDough(DoughType.THIN);
     }
 
     @Override
     public void buildToppings() {
-        pizza.setToppings(Arrays.asList("Salsa de tomate", "Queso", "Tomate confitado", "Rodajas de tomate"));
+        PIZZA.setToppings(Arrays.asList("Salsa de tomate", "Queso", "Tomate confitado", "Rodajas de tomate"));
     }
 
     @Override
-    public Pizza getPizza() {
-        return this.pizza;
+    public Pizza getPIZZA() {
+        return this.PIZZA;
     }
 
 }
