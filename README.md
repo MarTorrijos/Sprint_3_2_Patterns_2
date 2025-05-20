@@ -1,6 +1,6 @@
-## Descripción
+## Objectivo
 
-Ejercicios pensados para practicar los design patterns Singleton y Abstract Factory.
+Aprender a identificar y manejar patrones de construcción de software. Especificamente practicar los design patterns Singleton y Abstract Factory.
 
 ### Tecnologias usadas
 
