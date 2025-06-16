@@ -10,9 +10,9 @@ public class Main {
     public static void main(String[] args) {
 
         HawaiianPizzaBuilder hawaiianBuilder = new HawaiianPizzaBuilder();
-        PizzaMaker hawaiianMaker = new PizzaMaker(hawaiianBuilder);
+        PizzaMaker pizzaMaker = new PizzaMaker();
 
-        hawaiianMaker.buildPizza();
+        pizzaMaker.buildHawaiianPizza(hawaiianBuilder);
         Pizza hawaiianPizza = hawaiianBuilder.getPIZZA();
 
         System.out.println("PIZZA HAWAIANA:\n" + hawaiianPizza);
@@ -20,9 +20,8 @@ public class Main {
         System.out.println("_____________________________________________");
 
         TomatoPizzaBuilder tomatoBuilder = new TomatoPizzaBuilder();
-        PizzaMaker tomatoMaker = new PizzaMaker(tomatoBuilder);
 
-        tomatoMaker.buildPizza();
+        pizzaMaker.buildTomatoPizza(tomatoBuilder);
         Pizza tomatoPizza = tomatoBuilder.getPIZZA();
 
         System.out.println("PIZZA DE TOMATE:\n" + tomatoPizza);
